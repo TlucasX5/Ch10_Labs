@@ -25,7 +25,7 @@ img {
 /* Style rules for mobile viewport */
 
 /* Hide tab-desk class */
-.tab-desk {
+.tab-desk #menu-links {
     display: none;
 }
 
@@ -38,6 +38,9 @@ header {
 
 header h1 {
     font-family: "DM Serif Display", serif;
+    font-size: 1.5em;
+    padding: 4%;
+    margin-right: 15%;
 }
 
 /* Style rules for navigation area */
@@ -45,24 +48,28 @@ nav {
     background-color: #373684;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    display: block;
-    font-size: 2em;
-    border-top: 1px solid #e5e9fc;
-}
-
-nav li a {
-    display: block;
+.mobile-nav a {
     color: #fff;
     text-align: center;
-    padding: 0.5em 1em;
+    font-size: 2em;
     text-decoration: none;
+    padding: 3%;
+    display: block;
 }
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+
 
 /* Style rules for main content */
 main {
@@ -236,16 +243,29 @@ footer a {
         display: block;
     }
 
-    .mobile {
+    .mobile .mobile-nav {
         display: none;
     }
 
     /* Tablet Viewport: Style rule for the header content */
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+
     span.tab-desk {
         display: inline;
     }
 
-    /* Tablet Viewport: Style rulkes for nav area */
+    /* Tablet Viewport: Style rules for nav area */
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
     nav li {
         border-top: none;
         display: inline-block;
@@ -258,6 +278,10 @@ footer a {
     }
 
     nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
         padding: 0.25em 0.5em;
     }
 
@@ -301,6 +325,7 @@ footer a {
     nav li a:hover {
         color: #373684;
         background-color: #e5e9fc;
+        transform: scale(1.2);
     }
 
     /* Desktop Viewport: Style rules for main content */
