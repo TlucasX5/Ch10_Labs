@@ -2,7 +2,7 @@
 <!-- 
 Student Name: Suzanne Lucas
 File Name: Contact.html
-Date: 2/19/2024
+Date: 4/17/2024
 -->
 <html lang="en">
 <head>
@@ -23,6 +23,21 @@ Date: 2/19/2024
 
     <div id="wrapper">
 
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="partnership.html">Partnership</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="nav-icon" onclick="hamburger()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
         <!-- Use the header area for the website name or logo. This is static. -->
         <header>
             <div class="tab-desk">
@@ -36,7 +51,7 @@ Date: 2/19/2024
         </header>
 
         <!-- Use the nav area to add Static hyperlinks to other pages within the website. -->
-        <nav>
+        <nav class="tab-desk">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -119,6 +134,8 @@ Date: 2/19/2024
         </footer>
 
     </div>    
+
+    <script src="scripts/script.js"></script>
     
 </body>
 </html>
